@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عيادة الدكتور حازم كسيري | طب الأورام — دمشق، شارع بغداد</title>
+
+    <!-- الخطوط العربية -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        clinic: {
+                            950: '#072433',
+                            900: '#0D3852',
+                            800: '#144F6B',
+                            700: '#1B6687',
+                            600: '#0F766E',
+                            500: '#0D9488',
+                            400: '#2DD4BF',
+                            100: '#CCFBF1',
+                            50: '#F0FDFA',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-clinic-500 selection:text-white">
+
+    <!-- الشريط العلوي -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-xl bg-clinic-900 text-clinic-400 flex items-center justify-center font-black text-lg shadow-sm">
+                    HK
+                </div>
+                <div>
+                    <p class="text-sm sm:text-base font-extrabold text-clinic-950 leading-tight">عيادة الدكتور حازم
+                        كسيري</p>
+                    <p class="text-xs text-slate-500">طب الأورام — دمشق، شارع بغداد</p>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="#services" class="hover:text-clinic-600 transition">الخدمات الطبية</a>
+                <a href="#preparation" class="hover:text-clinic-600 transition">تحضير الملف</a>
+                <a href="#booking" class="hover:text-clinic-600 transition">حجز موعد</a>
+                <a href="#location" class="hover:text-clinic-600 transition">الموقع والتواصل</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button onclick="toggleReceptionModal(true)"
+                    class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-clinic-50 text-clinic-700 border border-clinic-200 hover:bg-clinic-100 transition">
+                    لوحة الاستقبال
+                </button>
+                <a href="#booking"
+                    class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-clinic-600 text-white hover:bg-clinic-700 transition">
+                    احجز الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-bl from-clinic-950 via-clinic-900 to-clinic-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-5">
+                <span
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/10 text-clinic-100 border border-white/15">
+                    منصة إلكترونية مستقلة — دمشق، شارع بغداد
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-black leading-tight">
+                    رعاية متخصصة ومتابعة منظمة في <span class="text-clinic-400">طب الأورام</span>
+                </h1>
+                <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    واجهة إلكترونية مخصصة لعيادة <strong>الدكتور حازم كسيري</strong> في <strong>شارع بغداد
+                        بدمشق</strong> لتسهيل تنظيم المواعيد، تحضير التقارير والتحاليل مسبقاً، وتوضيح الوصول إلى العيادة
+                    للمراجعين وذويهم.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                    <a href="#booking"
+                        class="px-6 py-3.5 rounded-xl bg-clinic-500 hover:bg-clinic-400 text-clinic-950 font-extrabold text-sm sm:text-base transition shadow-lg">
+                        حجز استشارة عبر واتساب
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=33.5188402,36.3099653" target="_blank"
+                        rel="noopener noreferrer"
+                        class="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm sm:text-base border border-white/20 transition">
+                        الاتجاهات على خرائط Google
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-white/10 backdrop-blur border border-white/15 rounded-2xl p-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                        <span class="text-sm font-bold text-clinic-100">بيانات العيادة والموقع</span>
+                        <span
+                            class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold">شارع
+                            بغداد</span>
+                    </div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-2">
+                            <span class="text-slate-300">الطبيب:</span>
+                            <span class="font-bold text-white">د. حازم كسيري</span>
+                        </div>
+                        <div class="flex justify-between gap-2">
+                            <span class="text-slate-300">التخصص:</span>
+                            <span class="font-bold text-white">طب الأورام</span>
+                        </div>
+                        <div class="flex justify-between gap-2">
+                            <span class="text-slate-300">العنوان:</span>
+                            <span class="font-bold text-white text-left">دمشق — شارع بغداد (G896+C27)</span>
+                        </div>
+                        <div class="flex justify-between gap-2">
+                            <span class="text-slate-300">معالم قريبة:</span>
+                            <span class="font-semibold text-clinic-100 text-left">قرب حلويات السلطان ومطعم أبو
+                                حسان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات الطبية -->
+    <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+        <div class="max-w-2xl mb-8">
+            <h2 class="text-2xl sm:text-3xl font-black text-clinic-950">محاور الاستشارة والمتابعة</h2>
+            <p class="text-slate-600 mt-2 text-sm sm:text-base">تنظيم واضح لمراحل التقييم والمتابعة السريرية للمريض
+                وعائلته.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm">
+                <h3 class="text-lg font-extrabold text-clinic-900 mb-2">التشخيص والاستشارة الأولية</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">قراءة التقارير الطبية، الخزعات، والصور الشعاعية وتحديد
+                    خطوات التقييم اللازمة بوضوح.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm">
+                <h3 class="text-lg font-extrabold text-clinic-900 mb-2">متابعة الخطط العلاجية</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">مراجعة دورية للاستجابة العلاجية، الفحوص المخبرية،
+                    وتنسيق المواعيد القادمة بدقة.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm">
+                <h3 class="text-lg font-extrabold text-clinic-900 mb-2">الرعاية الداعمة وتخفيف الأعراض</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">إرشادات عملية للمريض والمرافقين حول الأعراض الجانبية،
+                    التغذية، والالتزام بالمتابعة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- تحضير الملف الطبي -->
+    <section id="preparation" class="bg-clinic-50/70 border-y border-clinic-100 py-14">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-black text-clinic-950 mb-6">ما الذي يُنصح باصطحابه للمعاينة؟</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200">
+                    <p class="font-extrabold text-clinic-900 text-sm mb-1">1. التقارير والخزعات</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">كافة التقارير المرضية والسريرية السابقة مرتبة
+                        زمنياً.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200">
+                    <p class="font-extrabold text-clinic-900 text-sm mb-1">2. الصور الشعاعية</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">صور أو تقارير CT / MRI / PET مع الأقراص إن وجدت.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200">
+                    <p class="font-extrabold text-clinic-900 text-sm mb-1">3. التحاليل المخبرية</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">أحدث نتائج الدم، الكبد، الكلية، والواسمات
+                        المخبرية.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200">
+                    <p class="font-extrabold text-clinic-900 text-sm mb-1">4. قائمة الأدوية الحالية</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">أسماء وجرعات الأدوية الحالية وأي حساسية دوائية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- حجز المواعيد عبر واتساب -->
+    <section id="booking" class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-5 space-y-4">
+                <h2 class="text-2xl sm:text-3xl font-black text-clinic-950">طلب حجز موعد مسبق</h2>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    أدخل بيانات المراجعة لتجهيز رسالة حجز منظمة ترسل مباشرة عبر واتساب لتنسيق الموعد مع العيادة في
+                    <strong>شارع بغداد</strong>.
+                </p>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-xs text-slate-600 space-y-1.5">
+                    <p class="font-bold text-clinic-900">ملاحظة للإعداد:</p>
+                    <p>يمكن اعتماد رقم واتساب العيادة مباشرة في حقل رقم واتساب العيادة أدناه قبل الإرسال.</p>
+                </div>
+            </div>
+
+            <form id="bookingForm"
+                class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">اسم المراجع / المريض *</label>
+                        <input type="text" id="patientName" required placeholder="مثال: أحمد المحمود"
+                            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-clinic-500" />
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">رقم هاتف المراجع *</label>
+                        <input type="tel" id="patientPhone" required placeholder="مثال: 09xxxxxxxx"
+                            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-clinic-500" />
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">نوع الزيارة</label>
+                        <select id="visitType"
+                            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:border-clinic-500">
+                            <option value="استشارة أولية وتقييم ملف">استشارة أولية وتقييم ملف</option>
+                            <option value="متابعة علاجية ونتائج فحوص">متابعة علاجية ونتائج فحوص</option>
+                            <option value="مراجعة تقارير وصور شعاعية">مراجعة تقارير وصور شعاعية</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">رقم واتساب العيادة (بصيغة دولية بدون
+                            + أو أصفار بادئة)</label>
+                        <input type="text" id="clinicWhatsapp" value="963" placeholder="مثال: 9639xxxxxxxx"
+                            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-clinic-500" />
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">ملاحظات إضافية (اختياري)</label>
+                    <textarea id="notes" rows="3" placeholder="اذكر الوقت المفضل أو أي تفاصيل مختصرة حول الحالة..."
+                        class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-clinic-500"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full py-3.5 rounded-xl bg-clinic-600 hover:bg-clinic-700 text-white font-extrabold text-sm sm:text-base transition">
+                    إرسال طلب الحجز عبر واتساب
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- الموقع -->
+    <section id="location" class="bg-white border-t border-slate-200 py-10">
+        <div
+            class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+                <h3 class="text-lg font-extrabold text-clinic-950">عيادة الدكتور حازم كسيري — شارع بغداد، دمشق</h3>
+                <p class="text-sm text-slate-600">رمز الموقع: <span class="font-semibold">G896+C27</span> — الإحداثيات:
+                    <span class="font-semibold">33.5188402, 36.3099653</span></p>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=33.5188402,36.3099653" target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-2.5 rounded-xl bg-clinic-900 hover:bg-clinic-800 text-white text-sm font-bold transition">
+                فتح الموقع على الخريطة
+            </a>
+        </div>
+    </section>
+
+    <!-- نافذة لوحة الاستقبال التجريبية -->
+    <div id="receptionModal"
+        class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <div>
+                    <h3 class="text-lg font-black text-clinic-950">لوحة الاستقبال — معاينة تنظيم المواعيد</h3>
+                    <p class="text-xs text-slate-500">عرض تجريبي لكيفية متابعة طلبات الحجز اليومية في العيادة</p>
+                </div>
+                <button onclick="toggleReceptionModal(false)"
+                    class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700">
+                    إغلاق
+                </button>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-right text-xs sm:text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-600 border-b border-slate-200">
+                            <th class="py-2.5 px-3 font-bold">المراجع</th>
+                            <th class="py-2.5 px-3 font-bold">نوع الزيارة</th>
+                            <th class="py-2.5 px-3 font-bold">الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="py-2.5 px-3 font-semibold">سامر الخطيب</td>
+                            <td class="py-2.5 px-3">متابعة علاجية ونتائج فحوص</td>
+                            <td class="py-2.5 px-3"><span
+                                    class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">مؤكد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2.5 px-3 font-semibold">هدى الدالاتي</td>
+                            <td class="py-2.5 px-3">استشارة أولية وتقييم ملف</td>
+                            <td class="py-2.5 px-3"><span
+                                    class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">بانتظار
+                                    التأكيد</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2.5 px-3 font-semibold">محمود العلي</td>
+                            <td class="py-2.5 px-3">مراجعة تقارير وصور شعاعية</td>
+                            <td class="py-2.5 px-3"><span
+                                    class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-sky-100 text-sky-800">جاهز
+                                    للملف</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleReceptionModal(show) {
+            const modal = document.getElementById('receptionModal');
+            if (show) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            } else {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('patientName').value.trim();
+            const phone = document.getElementById('patientPhone').value.trim();
+            const visitType = document.getElementById('visitType').value;
+            const notes = document.getElementById('notes').value.trim();
+            const whatsappNumber = document.getElementById('clinicWhatsapp').value.replace(/\D/g, '');
+
+            const message =
+                `السلام عليكم، طلب حجز موعد - عيادة الدكتور حازم كسيري (شارع بغداد):\n` +
+                `• الاسم: ${name}\n` +
+                `• رقم الهاتف: ${phone}\n` +
+                `• نوع الزيارة: ${visitType}\n` +
+                (notes ? `• ملاحظات: ${notes}\n` : '');
+
+            const encodedText = encodeURIComponent(message);
+            const url = whatsappNumber
+                ? `https://wa.me/${whatsappNumber}?text=${encodedText}`
+                : `https://wa.me/?text=${encodedText}`;
+
+            window.open(url, '_blank', 'noopener,noreferrer');
+        });
+    </script>
+</body>
+
+</html>
